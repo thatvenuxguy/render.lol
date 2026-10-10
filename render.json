@@ -1,0 +1,51 @@
+
+{
+  "name": "sit-here-and-do-nothing",
+  "version": "1.0.0",
+  "hosting": {
+    "provider": "render",
+    "type": "web-service",
+    "runtime": "node",
+    "buildCommand": "npm install",
+    "startCommand": "node server.js"
+  },
+  "website": {
+    "title": "Sit here and do nothing 😎",
+    "section": "Friend fillups",
+    "fields": {
+      "robloxUsername": {
+        "required": true
+      },
+      "ageGroup": {
+        "required": true,
+        "options": [
+          "Rblx Kids",
+          "Rblx Select",
+          "Rblx 16+"
+        ]
+      },
+      "minecraftUsername": {
+        "required": false,
+        "default": "IDH"
+      },
+      "discordUsername": {
+        "required": false
+      }
+    }
+  },
+  "admin": {
+    "passwordEnvironmentVariable": "ADMIN_PASSWORD",
+    "canViewRegistrations": true,
+    "canMarkDone": true
+  },
+  "storage": {
+    "type": "persistent-database",
+    "saveRegistrations": true
+  },
+  "owner": {
+    "minecraft": "ThatVenuxGuy",
+    "roblox": "TheRealVenux_3",
+    "discord": "thatvenuxguy_yt",
+    "youtube": "https://www.youtube.com/@ThatVenuxGuy"
+  }
+}
